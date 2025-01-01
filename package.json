@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fake-server":"json-server --watch ./fake-server/db.json --routes ./fake-server/routes.json --port 3090"
+
   },
   "dependencies": {
     "react": "^19.0.0",
