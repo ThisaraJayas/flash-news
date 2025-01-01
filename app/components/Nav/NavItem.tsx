@@ -1,9 +1,10 @@
 "use client"
+import { ArticleCategory } from "@/app/types/article-type";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function NavItem(p:{category: string, alt: string, src: StaticImageData}){
+export function NavItem(p:{category: ArticleCategory, alt: string, src: StaticImageData}){
     const pathName = usePathname() //get pathname from browser ex: bussinees,environment
     const isActive ="/articles/category"+p.category===pathName;
 
